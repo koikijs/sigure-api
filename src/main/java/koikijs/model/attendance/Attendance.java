@@ -9,5 +9,5 @@ import javax.persistence.Id;
 @Entity
 public class Attendance {
     @Id
-    Long id;
+    private Long id;
 }
