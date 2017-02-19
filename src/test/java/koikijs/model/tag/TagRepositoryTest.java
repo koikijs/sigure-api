@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 /**
@@ -24,6 +25,7 @@ public class TagRepositoryTest {
         tag.setName("name");
         tagRepository.save(tag);
         Tag savedTag = tagRepository.findOne("id");
-        System.out.println(savedTag);
+
+        assertThat(savedTag.getName(), is("name"));
     }
 }
