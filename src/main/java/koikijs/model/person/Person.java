@@ -1,7 +1,10 @@
 package koikijs.model.person;
 
+import koikijs.model.tag.Tag;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.List;
 
 /**
  * Created by nabuchi on 2017/02/19.
@@ -9,11 +12,16 @@ import javax.persistence.Id;
 @Entity
 public class Person {
     @Id
-    private Long id;
+    private String id;
+
+    private String countryCode;
+
+    private String cityCode;
 
     private String name;
 
     private String iconUrl;
 
-    private String city;
+    private List<Tag> tags;
+
 }

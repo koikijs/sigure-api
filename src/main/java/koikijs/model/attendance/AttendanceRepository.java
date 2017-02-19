@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
  * Created by nabuchi on 2017/02/19.
  */
 @Repository
-public interface AttendanceRepository extends JpaRepository<Attendance, Long>, JpaSpecificationExecutor<Attendance> {
+public interface AttendanceRepository extends JpaRepository<Attendance, String>, JpaSpecificationExecutor<Attendance> {
 }

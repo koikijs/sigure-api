@@ -9,5 +9,7 @@ import javax.persistence.Id;
 @Entity
 public class Tag {
     @Id
-    private Long id;
+    private String id;
+
+    private String name;
 }
