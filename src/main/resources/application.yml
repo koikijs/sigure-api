@@ -9,3 +9,8 @@ spring.jackson.serialization:
 management:
   context-path: /monitor
   info.git.mode: full
+
+# custom
+tomcat.ajp:
+  port: 8009
+  enabled: true
